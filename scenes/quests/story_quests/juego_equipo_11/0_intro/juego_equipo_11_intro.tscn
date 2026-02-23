@@ -2,7 +2,6 @@
 
 [ext_resource type="TileSet" uid="uid://cxnkth0q78urj" path="res://scenes/quests/story_quests/juego_equipo_11/tiles/juego_equipo_11_exterior_floors.tres" id="1_3ghvy"]
 [ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://assets/first_party/templates/intro/NO_EDIT_intro_image.png" id="2_w3kw5"]
-[ext_resource type="SpriteFrames" uid="uid://cvucvdg7sikb4" path="res://scenes/quests/story_quests/juego_equipo_11/player_components/juego_equipo_11_player.tres" id="3_hucee"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_h6emh"]
 [ext_resource type="Resource" uid="uid://dm1deboo8vqc2" path="res://scenes/quests/story_quests/juego_equipo_11/0_intro/intro_components/juego_equipo_11_intro.dialogue" id="5_2yalq"]
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_6ad6b"]
@@ -130,7 +129,6 @@ y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=169229228]
 position = Vector2(400, 349)
-sprite_frames = ExtResource("3_hucee")
 animation = &"idle"
 autoplay = "idle"
 
