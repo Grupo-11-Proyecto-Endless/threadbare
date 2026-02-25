@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 ~ start
-Something in this scene will throw projectiles at you. The goal is to redirect them toward the targets.
-Explore the Scene Tree to add, change, or remove elements.
+El sistema de defensa está fuera de control y dispara a todo lo que se mueve
+Tu complicada misión será: Redirigir el caos pero antes, respira y relajate antes de hacerlo! Puede que no lo logres...
 => END
 
 ~ well_done
-You can add text here after the player takes the collectible. Be creative with this one!
+Felicitaciones, recolectaste un easter egg ANIMA. Solo existe 1 en la faz de la tierra, que suerte tienes!
 => END
