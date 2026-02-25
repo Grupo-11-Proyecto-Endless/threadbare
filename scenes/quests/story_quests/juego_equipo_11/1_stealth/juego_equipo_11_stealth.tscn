@@ -115,7 +115,7 @@ debug_color = Color(0, 0, 0, 0.42)
 [node name="HUD" parent="." unique_id=1994868895 instance=ExtResource("10_3rnlm")]
 
 [node name="CollectibleItem" parent="." unique_id=1779229490 instance=ExtResource("11_y2j12")]
-position = Vector2(2335, 955)
+position = Vector2(2275, 789)
 next_scene = "uid://cr7u1ykgpdk1t"
 item = SubResource("Resource_ligbv")
 collected_dialogue = ExtResource("13_7nrjt")

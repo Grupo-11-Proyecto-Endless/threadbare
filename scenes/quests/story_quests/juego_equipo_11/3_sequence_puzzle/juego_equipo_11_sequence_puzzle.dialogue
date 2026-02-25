@@ -1,12 +1,10 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-This scene includes objects that the player must tap in a particular sequence, and signs with clues on them.
-Select a "SequencePuzzleStep" node and change the array in the "Sequence" field.
-The first melody is set to yellow, green, blue. This means that you should tap those objects in that order.
-Can you guess the second sequence without looking at the Inspector?
+Alguien dejó este puzzle sin terminar y ahora te toca a ti descifrarlo. 
+La lógica dice que si tocas Amarillo, Verde y luego Azul, algo debería explotar (o abrirse, lo que pase primero).
 => END
 ~ well_done
-Well done! You can add more steps to the puzzle. Just remember to add them to the "SequencePuzzle" node, and add a new hint sign for each one.
-Using what you've learned so far, what kind of challenge can you create here? Have fun!
+No te confíes en que todo es muy fácil, el segundo acertijo separa a los novatos de los expertos. 
+¿Eres capaz de sacarlo sin hacer trampas mirando los archivos del juego? ¡Demuéstralo!
 => END

@@ -1,11 +1,12 @@
 [gd_scene format=4 uid="uid://e4nbalq3tuqv"]
 
 [ext_resource type="TileSet" uid="uid://cxnkth0q78urj" path="res://scenes/quests/story_quests/juego_equipo_11/tiles/juego_equipo_11_exterior_floors.tres" id="1_3ghvy"]
-[ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://assets/first_party/templates/intro/NO_EDIT_intro_image.png" id="2_w3kw5"]
 [ext_resource type="SpriteFrames" uid="uid://cvucvdg7sikb4" path="res://scenes/quests/story_quests/juego_equipo_11/player_components/juego_equipo_11_player.tres" id="3_hucee"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_h6emh"]
 [ext_resource type="Resource" uid="uid://dm1deboo8vqc2" path="res://scenes/quests/story_quests/juego_equipo_11/0_intro/intro_components/juego_equipo_11_intro.dialogue" id="5_2yalq"]
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_6ad6b"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_e7vm2"]
 
 [sub_resource type="Animation" id="Animation_3ul2j"]
 length = 0.001
@@ -109,7 +110,7 @@ metadata/_edit_lock_ = true
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers" unique_id=1406016146]
 position = Vector2(770, 227)
 scale = Vector2(0.802083, 0.802083)
-texture = ExtResource("2_w3kw5")
+texture = SubResource("ViewportTexture_e7vm2")
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers" unique_id=874671513]
 tile_map_data = PackedByteArray("AAAKAAEABgAAAAAAAAAKAAIABgADAAEAAAAKAAMABgADAAEAAAAKAAQABgADAAEAAAANAAEABgACAAAAAAANAAIABgADAAEAAAANAAMABgADAAEAAAANAAQABgADAAEAAAAKAAUABgAAAAIAAAALAAEABgABAAMAAAALAAUABgABAAMAAAAMAAEABgABAAMAAAAMAAUABgABAAMAAAANAAUABgACAAIAAAAAAAcAAQAGAAMAAAABAAcAAQAGAAMAAAACAAcAAQAGAAMAAAADAAcAAQAGAAMAAAAEAAcAAQAGAAMAAAAFAAcAAQAGAAMAAAAGAAcAAQAGAAMAAAAHAAcAAQAGAAMAAAAIAAcAAQAGAAMAAAAJAAcAAQAGAAMAAAAKAAcAAQAGAAMAAAALAAcAAQAGAAMAAAAMAAcAAQAGAAMAAAANAAcAAQAGAAMAAAAOAAcAAQAGAAMAAAD//wcAAQAGAAMAAAD+/wcAAQAGAAMAAAD9/wcAAQAGAAMAAAD8/wcAAQAGAAMAAAD7/wcAAQAGAAMAAAD6/wcAAQAGAAMAAAD5/wcAAQAGAAMAAAD4/wcAAQAFAAMAAAAPAAcAAQAGAAMAAAAQAAcAAQAGAAMAAAARAAcAAQAGAAMAAAASAAcAAQAGAAMAAAATAAcAAQAGAAMAAAAUAAcAAQAGAAMAAAAVAAcAAQAGAAMAAAAWAAcAAQAHAAMAAAA=")
