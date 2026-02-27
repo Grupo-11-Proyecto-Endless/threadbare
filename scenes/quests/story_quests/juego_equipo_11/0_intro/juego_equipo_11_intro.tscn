@@ -13,26 +13,26 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/path = NodePath("OnTheGround/Character:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"idle"]
+"update": 0,
+"values": [Vector2(320, 320)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("OnTheGround/Character:position")
+tracks/1/path = NodePath("OnTheGround/Character:animation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(400, 349)]
+"values": [&"idle"]
 }
 
 [sub_resource type="Animation" id="Animation_e0cpq"]
@@ -41,26 +41,26 @@ length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/path = NodePath("OnTheGround/Character:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [&"walk", &"idle"]
+"update": 0,
+"values": [Vector2(495, 478), Vector2(1010, 478)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("OnTheGround/Character:position")
+tracks/1/path = NodePath("OnTheGround/Character:animation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(495, 478), Vector2(1010, 478)]
+"values": [&"walk", &"idle"]
 }
 
 [sub_resource type="Animation" id="Animation_j554r"]
@@ -69,26 +69,26 @@ length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/path = NodePath("OnTheGround/Character:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [&"walk", &"idle"]
+"update": 0,
+"values": [Vector2(-50, 478), Vector2(495, 478)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("OnTheGround/Character:position")
+tracks/1/path = NodePath("OnTheGround/Character:animation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-50, 478), Vector2(495, 478)]
+"values": [&"walk", &"idle"]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yl5fs"]
@@ -113,6 +113,7 @@ scale = Vector2(0.802083, 0.802083)
 texture = SubResource("ViewportTexture_e7vm2")
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers" unique_id=874671513]
+position = Vector2(0, 12)
 tile_map_data = PackedByteArray("AAAKAAEABgAAAAAAAAAKAAIABgADAAEAAAAKAAMABgADAAEAAAAKAAQABgADAAEAAAANAAEABgACAAAAAAANAAIABgADAAEAAAANAAMABgADAAEAAAANAAQABgADAAEAAAAKAAUABgAAAAIAAAALAAEABgABAAMAAAALAAUABgABAAMAAAAMAAEABgABAAMAAAAMAAUABgABAAMAAAANAAUABgACAAIAAAAAAAcAAQAGAAMAAAABAAcAAQAGAAMAAAACAAcAAQAGAAMAAAADAAcAAQAGAAMAAAAEAAcAAQAGAAMAAAAFAAcAAQAGAAMAAAAGAAcAAQAGAAMAAAAHAAcAAQAGAAMAAAAIAAcAAQAGAAMAAAAJAAcAAQAGAAMAAAAKAAcAAQAGAAMAAAALAAcAAQAGAAMAAAAMAAcAAQAGAAMAAAANAAcAAQAGAAMAAAAOAAcAAQAGAAMAAAD//wcAAQAGAAMAAAD+/wcAAQAGAAMAAAD9/wcAAQAGAAMAAAD8/wcAAQAGAAMAAAD7/wcAAQAGAAMAAAD6/wcAAQAGAAMAAAD5/wcAAQAGAAMAAAD4/wcAAQAFAAMAAAAPAAcAAQAGAAMAAAAQAAcAAQAGAAMAAAARAAcAAQAGAAMAAAASAAcAAQAGAAMAAAATAAcAAQAGAAMAAAAUAAcAAQAGAAMAAAAVAAcAAQAGAAMAAAAWAAcAAQAHAAMAAAA=")
 tile_set = ExtResource("1_3ghvy")
 
@@ -130,7 +131,8 @@ editor_draw_limits = true
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=169229228]
-position = Vector2(400, 349)
+position = Vector2(320, 320)
+scale = Vector2(0.3, 0.3)
 sprite_frames = ExtResource("3_hucee")
 animation = &"idle"
 autoplay = "idle"
